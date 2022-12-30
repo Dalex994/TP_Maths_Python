@@ -13,15 +13,14 @@ h = (b-a)/n
 abs = [a+i*h for i in range(n+1)]
 ord = [f(t) for t in abs]
 
-def Liste(x,y,range_b,L,dir_coeffs):
-    L = []
+def Liste(L,x,y,range_b,dir_coeffs):
 
-    for ecart_b in range(0, b):
-        b2 = ecart_b+2
+
+    for range_b in range(0, b):
+        L = []
+        b2 = range_b+2
         x = abs+b2
         y = (f(t) for t in x)
-
-    dir_coeffs = np.gradient(y, x)
-
-    L.append(dir_coeffs)
-    show(L)
+        dir_coeffs = np.gradient(y, x)
+        L.append(dir_coeffs)
+        print("Values from the directing coefficients of secants to the curve are {0}".format(len(L)))
