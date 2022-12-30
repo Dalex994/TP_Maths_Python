@@ -1,14 +1,15 @@
 import matplotlib.pyplot as plt
 
-# define the range
-xmin, xmax = 0, 10
+def Liste(x,y,range_b,L,dir_coeffs):
+    L = []
 
-# create the plot
-fig, ax = plt.subplots()
-x_coords, y_coords = ax.plot(xmin, xmax)
+    for ecart_b in range(0, b):
+        b2= ecart_b+2
+        x= abs+b2
+        y= [f(t) for t in x]
 
-print('x coordinates:', x_coords)
-print('y coordinates:', y_coords)
+dir_coeffs = np.gradient(y, x)
 
-# show the plot
-plt.show()
+L.append(dir_coeffs)
+
+show(L)
