@@ -16,12 +16,8 @@ plt.show()
 
 def Liste(x,y,range_b,L,dir_coeffs):
     L = []
-    ecart_b = range(0, b)
-    x = np.array()
-    y = np.array()
+    for ecart_b in range(0,b):
 
-    for i in ecart_b:
-        i = i+2
 
 
     dir_coeffs = np.gradient(y, x)
